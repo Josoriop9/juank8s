@@ -116,9 +116,16 @@ function botonDinamico() {
 
   //dom del resumen de compra
 
-  if (capturas1 || capturas2 > 0) {
+  if (capturasA || capturasT > 0) {
     document.getElementById(
       "contenidocarrito"
+    ).innerHTML = `Seleccionaste el paquete completo que contiene:
+    ${capturasA} americano y ${capturasT} tradicional \n`;
+  }  
+
+  if (capturas1 || capturas2 > 0) {
+    document.getElementById(
+      "contenidocarrito1"
     ).innerHTML = `Seleccionaste el paquete completo que contiene:
     ${capturas1}🍔 y ${capturas2}🍟 \n`;
   }  
@@ -141,8 +148,10 @@ function botonDinamico() {
   p = parseInt(document.getElementById("papas").value) * 1000;
   combo1 = parseInt(document.getElementById("combo1").value) * 2000;
   combo2 = parseInt(document.getElementById("combo2").value) * 1000;
+  americano = parseInt(document.getElementById("americano").value) * 2000;
+  tradicional = parseInt(document.getElementById("tradicional").value) * 1000;
   document.getElementById("totalcarrito").innerHTML = `Tu total es: ${
-    h + p + combo1 + combo2
+    h + p + combo1 + combo2 + americano + tradicional
   }`;
 
 }
