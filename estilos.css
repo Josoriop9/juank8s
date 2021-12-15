@@ -1,0 +1,165 @@
+.navbar-brand{
+    top: 0px;
+    left: 25px;    
+}
+.img1{
+   position: absolute;
+   width: 250px;
+   height: 450px;
+   transform: scaleX(-1);
+   left: 20px;
+   top: 570px;
+   z-index: 1;
+   overflow: hidden;  
+     
+}
+.img2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 650px;
+    top: 60px;
+    z-index: 1;
+    overflow: hidden; 
+ }
+ .img3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 580px;
+    top: 190px;
+    z-index: 1;
+    overflow: hidden; 
+ }
+ .img4{
+    position: absolute;
+    width: 450px;
+    height: 180px;
+    left: 630px;
+    top: 1650px;
+    z-index: -1;
+    overflow: hidden; 
+ }
+ .img5{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 720px;
+    top: 245px;
+    z-index: 3;
+    overflow: hidden; 
+ }
+#uno{
+top: 190px;
+left: 450px;
+}
+#dos{
+top: 10px;
+left: -60px;
+    }
+#tres{
+top: 10px;
+left: -65px;
+}
+#cuatro{
+    position: absolute;
+    top: 1800px;
+    left: 50px;
+}
+#quinto{
+    position: absolute;
+    top: 1800px;
+    left: 400px;
+}
+#sexto{
+    position: absolute;
+    top: 1800px;
+    left: 750px;
+}
+.primer-titulo{
+    position: absolute;
+    display: flex;
+    top: 100px;  
+    left: 210px;
+    font-size: 500%; 
+    text-align: center;
+    font-family: Florence;
+    z-index: 2;
+}
+.segundo-titulo{
+    position: absolute;
+    top: 190px;  
+    left: 370px;
+    font-size: 150%; 
+    z-index: 2;
+}
+#tercer-titulo{
+    position: absolute;
+    top: 590px;  
+    left: 560px;
+    font-size: 300%; 
+    z-index: 2;
+}
+#casosdeexito{
+    position: absolute;
+    top: 1650px;  
+    left: 50px;
+    font-size: 300%; 
+    z-index: 2;
+}
+#Beneficios{
+    position: absolute;
+    top: -50px;  
+    left: 30px;
+    font-size: 300%; 
+    z-index: 2;  
+}
+.btn-primary{
+    position: absolute;
+    top: 290px;  
+    left: 420px;
+    font-size: 100%; 
+    z-index: 2;
+}
+.btn-dark{
+    position: absolute;
+    top: 290px;  
+    left: 550px;
+    font-size: 100%;
+    z-index: 2;  
+}
+#footer{
+    position: relative;
+    top: 690px; 
+}
+#icon-grid{
+    position: relative;
+    top: 250px; 
+}
+.b-example-divider {
+    position: relative;
+    height: 1rem;
+    background-color: rgba(226, 228, 212, 0.13);
+    border: solid rgba(255, 255, 255, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(110, 108, 108, 0.1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    top: 460px;
+  }
+  .b-example-divider1 {
+    position: relative;
+    height: 1rem;
+    background-color: rgba(226, 228, 212, 0.13);
+    border: solid rgba(255, 255, 255, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(110, 108, 108, 0.1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    top: 700px;
+  }
+  .footer{
+      position:relative;
+      top: 700px;
+  }
+  .container {
+  max-width: 8000px;
+}
+
+
