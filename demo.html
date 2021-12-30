@@ -300,6 +300,37 @@ clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.0
   </form>
   <br><br>
 
+  <!-- <button class="btn btn-warning" id="btn99" onclick="apiAjax();">Verificar datos</button>
+  <ol id="fetch"></ol> -->
+
+  <button type="button" id="btn99" class="btn btn-warning" data-bs-toggle="modal"
+  data-bs-target="#exampleModalLong00">Valida tu información
+  <span class="badge bg-danger ms-2" id="btncantidad999"></span></button>
+
+<div class="modal fade" id="exampleModalLong00" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><strong>Menu</strong></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <ol id="fetch"></ol>
+
+      <div class="modal-footer">
+
+      <button type="button" class="btn btn-warning" id="agregar" onclick="apiAjax()"> Ver
+      <span class="badge bg-danger ms-2" id="btncantidad"></span></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br> <br>
 
 
   <form action="https://checkout.wompi.co/p/" method="GET">
@@ -324,6 +355,9 @@ clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.0
     <input type="hidden" name="shipping-address:region" value="REGION_DE_ENVIO" />
     <button type="submit" class="btn btn-warning" id="pagar">Pagar con Wompi</button>
   </form>
+
+  <br>
+
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top" id="footer" style="background: rgba(226, 226, 171, 0.233);">
     <div class="row">

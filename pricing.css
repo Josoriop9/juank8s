@@ -45,6 +45,13 @@ form {
   position: relative;
 }
 
+#btn99 {
+  width: 200px;
+  left: 440px;
+  margin-top: 20px;
+  position: relative;
+}
+
 #agregar {
   position: relative;
   right: 39%;

@@ -137,7 +137,7 @@ function botonDinamico() {
     ${capturas3} combo uno y ${capturas4} combo dos`;
   }
 
-  if (capturas1 || capturas2 || capturas3 || capturas4 > 0)
+  if (capturas1 || capturas2 || capturas3 || capturas4 || capturasA || capturasT > 0)
     document.getElementById(
       "titulocarrito"
     ).innerHTML = `Tu carrito se va llenando 😀`;  
@@ -156,12 +156,30 @@ function botonDinamico() {
 
 }
 
+function apiAjax () { 
+  const $fetch = document.getElementById("fetch");
+  $fragment = document.createDocumentFragment();
+
+  fetch("https://fakestoreapi.com/users")
+          .then((res) => {
+              console.log(res);
+              return res.json();
+          })
+          .then((json) => {
+              console.log(json);
+              json.forEach((el) => {
+              const $li = document.createElement("li");
+              $li.innerHTML = `${el.email}`
+              $fragment.appendChild($li);
+          });
+              $fetch.appendChild($fragment)        
+          });
+      }
 
 function btncarrito () {
  let botonCarrito =  document.getElementById("agregar1"); 
   console.log(botonCarrito);
-
-}
+}      
 
 //function resultado () {
 //let resultado = document.getElementById("button7").value;
