@@ -53,6 +53,11 @@ form {
 }
 
 #agregar {
+  width: 200px;
+  left: -110px;
+}
+
+#agregar {
   position: relative;
   right: 39%;
 }
