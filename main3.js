@@ -1,28 +1,28 @@
 function operation3() {
-  function brunch(Amerciano, Tradicional) {
-    this.Amerciano = Amerciano;
-    this.Tradicional = Tradicional;
+  function brunch(American, Traditional) {
+    this.American = American;
+    this.Traditional = Traditional;
   }
-  capturarAmericano = $("#americano").val();
-  capturarTradicional = $("#tradicional").val();
-  objetosCapturadosB = new brunch(capturarAmericano, capturarTradicional);
-  console.log(objetosCapturadosB);
+  grabAmerican = $("#americano").val();
+  grabTraditional = $("#tradicional").val();
+  grabBrunch = new brunch(grabAmerican, grabTraditional);
+  console.log(grabBrunch);
 
-  capturasA = parseInt($("#americano").val(), 0);
-  capturasT = parseInt($("#tradicional").val(), 0);
+  captureA = parseInt($("#americano").val(), 0);
+  captureT = parseInt($("#tradicional").val(), 0);
   $("#btncantidad7").html(function () {
-    return capturasA + capturasT;
+    return captureA + captureT;
   });
-  botonDinamico();
-  nueva1();
+  DinamicButton();
+  newFunction();
 }
 
-baseDatosBrunch = [];
-function nueva1() {
-  baseDatosBrunch.push(objetosCapturadosB);
-  console.log(baseDatosBrunch);
+dbBrunch = [];
+function newFunction() {
+  dbBrunch.push(grabBrunch);
+  console.log(dbBrunch);
 
-  let jsonString = JSON.stringify(objetosCapturadosB);
+  let jsonString = JSON.stringify(grabBrunch);
   console.log(jsonString);
 
   a = parseInt($("#americano").val() * 2000);
@@ -33,14 +33,14 @@ function nueva1() {
   }) 
 }
 
-function operacion1() {
-  function comida(hamburguesa, papas) {
-    this.hamburguesa = hamburguesa;
-    this.papas = papas;
+function operation1() {
+  function lunch(burguer, chips) {
+    this.burguer = burguer;
+    this.chips = chips;
   }
-  capturarH = document.getElementById("hamburguesa").value;
-  capturarP = document.getElementById("papas").value;
-  objetosCapturados = new comida(capturarH, capturarP);
+  captureH = document.getElementById("hamburguesa").value;
+  captureP = document.getElementById("papas").value;
+  objetosCapturados = new lunch(captureH, captureP);
   console.log(objetosCapturados);
 
   capturas1 = parseInt(document.getElementById("hamburguesa").value, 0);
@@ -49,13 +49,12 @@ function operacion1() {
 
   sessionStorage.setItem("cantidad de hamburguesas",capturas1);
 
-
-  botonDinamico();
-  nueva();
+  DinamicButton();
+  newFunction2();
 }
 
 baseDatosCompleto = [];
-function nueva() {
+function newFunction2() {
   baseDatosCompleto.push(objetosCapturados);
   console.log(baseDatosCompleto);
 
@@ -84,7 +83,7 @@ function operacion2() {
   capturas4 = parseInt(document.getElementById("combo2").value, 0);
   document.getElementById("btncantidad3").innerHTML = capturas3 + capturas4;
 
-  botonDinamico();
+  DinamicButton();
   combos();
 }
 
@@ -102,25 +101,23 @@ function combos() {
   document.getElementById("totalcombos").innerHTML = `Total ${totalCombos}`;
 }
 
-
-
-function botonDinamico() {
+function DinamicButton() {
   capturas1 = parseInt(document.getElementById("hamburguesa").value, 0);
   capturas2 = parseInt(document.getElementById("papas").value, 0);
   capturas3 = parseInt(document.getElementById("combo1").value, 0);
   capturas4 = parseInt(document.getElementById("combo2").value, 0);
-  capturasA = parseInt(document.getElementById("americano").value, 0);
-  capturasT = parseInt(document.getElementById("tradicional").value, 0);
+  captureA = parseInt(document.getElementById("americano").value, 0);
+  captureT = parseInt(document.getElementById("tradicional").value, 0);
   document.getElementById("btncantidad1").innerHTML =
-    capturas1 + capturas2 + capturas3 + capturas4 + capturasT + capturasA;
+    capturas1 + capturas2 + capturas3 + capturas4 + captureT + captureA;
 
   //dom del resumen de compra
 
-  if (capturasA || capturasT > 0) {
+  if (captureA || captureT > 0) {
     document.getElementById(
       "contenidocarrito"
     ).innerHTML = `Seleccionaste el paquete completo que contiene:
-    ${capturasA} americano y ${capturasT} tradicional \n`;
+    ${captureA} americano y ${captureT} tradicional \n`;
   }  
 
   if (capturas1 || capturas2 > 0) {
@@ -137,7 +134,7 @@ function botonDinamico() {
     ${capturas3} combo uno y ${capturas4} combo dos`;
   }
 
-  if (capturas1 || capturas2 || capturas3 || capturas4 || capturasA || capturasT > 0)
+  if (capturas1 || capturas2 || capturas3 || capturas4 || captureA || captureT > 0)
     document.getElementById(
       "titulocarrito"
     ).innerHTML = `Tu carrito se va llenando 😀`;  
@@ -151,7 +148,7 @@ function botonDinamico() {
   americano = parseInt(document.getElementById("americano").value) * 2000;
   tradicional = parseInt(document.getElementById("tradicional").value) * 1000;
   document.getElementById("totalcarrito").innerHTML = `Tu total es: ${
-    h + p + combo1 + combo2 + americano + tradicional
+  h + p + combo1 + combo2 + americano + tradicional
   }`;
 
 }
