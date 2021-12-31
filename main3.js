@@ -1,4 +1,4 @@
-function operacion3() {
+function operation3() {
   function brunch(Amerciano, Tradicional) {
     this.Amerciano = Amerciano;
     this.Tradicional = Tradicional;
@@ -160,31 +160,26 @@ function apiAjax () {
   const $fetch = document.getElementById("fetch");
   $fragment = document.createDocumentFragment();
 
-  fetch("https://fakestoreapi.com/users")
+  fetch("https://fakestoreapi.com/users/1")
           .then((res) => {
               console.log(res);
               return res.json();
           })
-          .then((json) => {
-              console.log(json);
-              json.forEach((el) => {
-              const $li = document.createElement("li");
-              $li.innerHTML = `${el.email}`
-              $fragment.appendChild($li);
-          });
-              $fetch.appendChild($fragment)        
-          });
-      }
+          .then((el) => {
+            console.log(el);
+            $fetch.innerHTML = `Nombre: ${el.name.firstname} 
+            <br> Apellido: ${el.name.lastname}
+            <br> Email: ${el.email}
+            <br> Cel: ${el.phone}
+            <br> Ciudad: ${el.address.city}`;
+          })
+        }      
 
 function btncarrito () {
  let botonCarrito =  document.getElementById("agregar1"); 
   console.log(botonCarrito);
 }      
 
-//function resultado () {
-//let resultado = document.getElementById("button7").value;
-//alert("hola");
-//};
 
 
 
